@@ -1,0 +1,348 @@
+body {
+    text-align: center;
+    font-family: Open sans, sans-serif;
+    margin: 0px 0px 30px 0px;
+    background-color: #201838;
+}
+
+.element {
+    background-image: url(../img/Unicorn Magic Pack Lowerthird 1.png);
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    color: plum;
+    font-family: 'courier New';
+}
+
+h3 {
+    font-size: 22px;
+    color: whitesmoke;
+    font-family: 'courier New';
+}
+
+h4 {
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'courier New';
+}
+
+p {
+    line-height: 1.5;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'courier New';
+}
+
+img {
+    width: 100%;
+}
+
+.titulo-amarelo {
+    color: khaki;
+}
+
+.titulo-roxo {
+    color: rebeccapurple;
+}
+
+.titulo-azul {
+    color: #00acee;
+}
+
+.titulo-fuccia {
+    color: fuchsia;
+}
+
+.titulo-vermelho {
+    color: #d83030;
+}
+
+.titulo-laranja {
+    color: #f08838;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+section section {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #38b850;
+    font-weight: 700;
+}
+
+button {
+    background: #3088f8;
+    border: 1px solid transparent;
+    padding: 2px 20px;
+    border-radius: 3px;
+}
+
+#twitch {
+    border: 2px solid palevioletred;
+}
+
+#twitch p {
+    color: ;
+}
+
+.principal {
+    display: block;
+    width: 100%;
+    background: #6840c8;
+    line-height: 2em;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/*Strip the ul of padding and list styling*/
+
+.principal ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    background: #6840c8;
+}
+
+
+/*Create a horizontal list with spacing*/
+
+.principal li {
+    display: inline-block;
+    /*float: left;
+      margin-right: 1px;*/
+}
+
+
+/*Style for menu links*/
+
+.principal li a {
+    display: block;
+    min-width: 140px;
+    text-align: center;
+    font-family: 'courier New';
+    color: #f8e0a0;
+    text-transform: uppercase;
+    background: #6840c8;
+    text-decoration: none;
+    margin-left: -5px;
+    padding: 10px 0;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+/*Hover state for top level links*/
+
+.principal li:hover a {
+    color: #3088f8;
+    background-color: #c4b0e4;
+}
+
+
+/*Style for dropdown links*/
+
+.principal li:hover ul a {
+    background: #f8e0a0;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/*Hover state for dropdown links*/
+
+.principal li:hover .principal ul a:hover {
+    color: #3088f8;
+}
+
+
+/*Hide dropdown links until they are needed*/
+
+.principal li ul {
+    display: none;
+}
+
+
+/*Make dropdown links vertical*/
+
+.principal li ul li {
+    display: block;
+    float: none;
+}
+
+
+/*Prevent text wrapping*/
+
+.principal li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+
+.principal .show-menu {
+    text-decoration: none;
+    color: #f8e0a0;
+    background: #6840c8;
+    text-align: center;
+    padding: 5px 15px;
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.principal .show-menu span {
+    padding-left: 25px;
+}
+
+
+/*Hide checkbox*/
+
+.principal input[type=checkbox] {
+    display: none;
+}
+
+
+/*Show menu when invisible checkbox is checked*/
+
+.principal input[type=checkbox]:checked~#menu {
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width: 800px) {
+    .principal .lines {
+        border-bottom: 15px double #f8e0a0;
+        border-top: 5px solid #f8e0a0;
+        content: "";
+        height: 5px;
+        width: 22px;
+        padding-left: 5px;
+        float: left;
+    }
+    /*Make dropdown links appear inline*/
+    .principal ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    .principal li {
+        margin-bottom: -5px;
+    }
+    /*Make all menu links full width*/
+    .principal ul li,
+    .principal li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .principal .show-menu {
+        display: block;
+    }
+}
+
+.intro-copy {
+    padding: 1em;
+    margin: 50vh auto;
+    max-width: 15em;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.top-link {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    padding: .25em;
+    width: 80px;
+    height: 80px;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    &.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+    svg {
+        fill: #000;
+        width: 24px;
+        height: 12px;
+    }
+    &:hover {
+        background-color: #E8E8E8;
+        svg {
+            fill: #000000;
+        }
+    }
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    &:focus {
+        display: block;
+        top: 5px;
+        left: 5px;
+        z-index: 100000; // Above WP toolbar
+        clip-path: none;
+        background-color: #eee;
+        padding: 15px 23px 14px;
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        line-height: normal;
+        color: #444;
+        font-size: 1em;
+        clip: auto !important;
+    }
+}
