@@ -355,4 +355,14 @@ button {
         font-size: 1em;
         clip: auto !important;
     }
+    
+    #footer {
+    background-color: #010101;
+    height: 80px;
+    width: 1800px;
+    position: relative;
+    z-index: 999;
+    margin-left: auto; /* linha modificada */
+    margin-right: auto; /* linha adicionada */
+   }
 }
