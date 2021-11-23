@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-family: Open sans, sans-serif;
     margin: 0px 0px 30px 0px;
-    background-color: #382850;
+    background-color: #201838;
 }
 
 .element {
@@ -140,7 +140,7 @@ button {
     text-align: center;
     width: 100%;
     position: absolute;
-    background: #403060;
+    background: #6840c8;
 }
 
 
@@ -160,9 +160,9 @@ button {
     min-width: 140px;
     text-align: center;
     font-family: 'courier New';
-    color: #d098f8;
+    color: #f8e0a0;
     text-transform: uppercase;
-    background: #403060;
+    background: #6840c8;
     text-decoration: none;
     margin-left: -5px;
     padding: 10px 0;
@@ -227,8 +227,8 @@ button {
 
 .principal .show-menu {
     text-decoration: none;
-    color: #d098f8;
-    background: #403060;
+    color: #f8e0a0;
+    background: #6840c8;
     text-align: center;
     padding: 5px 15px;
     display: none;
