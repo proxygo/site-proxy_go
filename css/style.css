@@ -45,10 +45,9 @@ p {
 }
 
 img {
-    width: 30%;
-    border-radius: 50%;
+    width: 100%;
 }
-
+    
 .titulo-amarelo {
     color: khaki;
 }
