@@ -5,6 +5,15 @@ body {
     background-color: #201838;
 }
 
+.footer {
+    color: #FFF;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: 0px auto;
+}
+
 .element {
     background-image: url(../img/Unicorn Magic Pack Lowerthird 1.png);
 }
@@ -12,28 +21,24 @@ body {
 h1 {
     font-size: 60px;
     font-weight: 300;
-    width: 100%;
-    height: 100%;
-    margin: center;
 }
 
 h2 {
     font-size: 40px;
     color: plum;
     font-family: 'courier New';
-    margin-top: 120px;   
-    
+    margin-top: 120px;
 }
 
 h3 {
     font-size: 22px;
-    color: #f5f5f5;
+    color: whitesmoke;
     font-family: 'courier New';
 }
 
 h4 {
     font-size: 20px;
-    color: #f5f5f5;
+    color: whitesmoke;
     font-family: 'courier New';
 }
 
@@ -46,9 +51,9 @@ p {
 }
 
 img {
-    width: 100px;
+    width: ;
 }
-    
+
 .titulo-amarelo {
     color: khaki;
 }
@@ -74,17 +79,8 @@ img {
 }
 
 section {
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
-    max-width: 864px;
-    padding: 0 14px;
-}
-
-
-/* Isso vai fazer todo o site manter o tamanho*/
-
-* {
-    box-sizing: border-box;
 }
 
 section section {
@@ -99,7 +95,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #38b850;
+    color: #ffee50;
     font-weight: 700;
 }
 
@@ -235,6 +231,10 @@ button {
     text-transform: uppercase;
 }
 
+.principal .show-menu span {
+    padding-left: 25px;
+}
+
 
 /*Hide checkbox*/
 
@@ -254,12 +254,12 @@ button {
 
 @media screen and (max-width: 800px) {
     .principal .lines {
-        border-bottom: 12px double #f8e0a0;
-        border-top: 4px solid #f8e0a0;
+        border-bottom: 15px double #f8e0a0;
+        border-top: 5px solid #f8e0a0;
         content: "";
-        height: 20px;
+        height: 5px;
         width: 22px;
-        padding-left: 10px;
+        padding-left: 5px;
         float: left;
     }
     /*Make dropdown links appear inline*/
@@ -356,17 +356,4 @@ button {
         font-size: 1em;
         clip: auto !important;
     }
-    
-    #footer {
-        background-color: #010101;
-        height: 80px;
-        width: 1800px;
-        position: relative;
-        z-index: 999;
-        margin-left: auto; 
-        /* linha modificada */
-        margin-right: auto; 
-        /* linha adicionada */
-   }
-    
 }
