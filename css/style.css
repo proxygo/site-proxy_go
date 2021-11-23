@@ -366,7 +366,10 @@ button {
     width: 1800px;
     position: relative;
     z-index: 999;
-    margin-left: auto; /* linha modificada */
-    margin-right: auto; /* linha adicionada */
+    margin-left: auto; 
+    /* linha modificada */
+    margin-right: auto; 
+    /* linha adicionada */
    }
+    
 }
