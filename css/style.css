@@ -22,10 +22,8 @@ h2 {
     color: plum;
     font-family: 'courier New';
     margin-top: 120px;
-    img{
-        border-radius: 50%;
-        width: 30%;
-        height: 30%;   
+    img {
+        border-radius: 50%;  
     }
 }
 
