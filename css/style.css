@@ -4,7 +4,64 @@ body {
     margin: 0px 0px 30px 0px;
     background-color: #382850;
 }
+/* Estilos para a galeria de fotos */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+/* Estilos para a caixa da galeria */
+.box-galery {
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos para os botões e imagens da galeria */
+.imgs {
+    --zi: calc(400px / 3 - 3px);
+    width: var(--zi);
+    height: var(--zi);
+    object-fit: cover;
+    transition: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    transition-timing-function: linear;
+}
+
+.img1 {
+    background-image: url("https://images.unsplash.com/photo-1542838686-b08706f6f2d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+
+.img2 {
+    left: var(--zi);
+    background-image: url("https://images.unsplash.com/photo-1549922470-949c45715199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    left: 0;
+    right: 0;
+}
+
+/* Mais estilos para a galeria, se necessário */
+
+/* CSS existente continua aqui */
 .footer {
     color: #FFF;
     width: 100%;
