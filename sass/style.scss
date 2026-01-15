@@ -9,13 +9,13 @@ $brand-primary: #2da9d7 !default;
 $brand-secondary: #DA1212 !default; 
 
 $brand-white: #fff;
-$brand-black: #000;
-$brand-lighter: #848484;
-$brand-darker: #212121;
+$brand-black: #65006e;
+$brand-lighter: #fdfd;
+$brand-darker: #fdfd
 $brand-selection-color: $brand-primary;
 $brand-body-color: #fcfcfc;
 $brand-body-bg: #fff;
-$brand-dark: #222831;
+$brand-dark: #fdfd;
 
 
 $input-border-focus: $brand-primary !default;
@@ -119,7 +119,7 @@ body {
 	line-height: 1.8;
 	font-size: 16px;
 	background: $brand-body-bg;
-	color: #848484;
+	color: #fdfd;
 	font-weight: 300;
 	overflow-x: hidden;
 	&.fh5co-offcanvas {
@@ -137,16 +137,20 @@ a {
 		outline: none;
 	}
 }
-p, ul, ol {
+
+p{
+	color: #fdfd;
+}
+ ul, ol {
 	margin-bottom: 1.5em;
-	font-size: 15px;
-	color: $brand-lighter;
+	font-size: 14px;
+	
 	// font-weight: 300;
 	font-family: $font-primary;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $brand-darker;
+	
 	font-family: $font-primary;
 	font-weight: 400;
 	margin: 0 0 20px 0;
@@ -189,7 +193,7 @@ figure {
 				list-style: none;
 				font-size: 15px;
 				a {
-					color: lighten($brand-black, 60%)!important;
+					color: lighten($brand-black,50%)!important;
 					padding: 10px;
 					@media screen and (max-width: $screen-xs) {
 						padding: 5px;
@@ -235,7 +239,7 @@ figure {
 		}
 		&:hover, &:active, &:focus {
 			h2 {
-				color: $brand-black;
+				color: $$brand-white;
 			}
 		}
 	}
@@ -274,10 +278,10 @@ figure {
 	.meta {
 		margin-bottom: 20px;
 		span {
-			color: lighten($brand-black, 75%);
+			color: lighten($brand-black, 15%);
 		}
 		a {
-			color: lighten($brand-black, 75%);
+			color: lighten($brand-black, 15%);
 			&:hover, &:active, &:focus {
 				color: $brand-black!important;
 			}

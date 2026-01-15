@@ -57,14 +57,17 @@
 		<header id="fh5co-header" role="banner">
 			<div class="container text-center">
 				<div id="fh5co-logo">
-					<a href="index.html"><img src="images/logo.png" alt="Present Free HTML5 Bootstrap Template"></a>
+					<a href="index.html"><img src="images/tipografia-proxy_go.png"=""> </a>
+					<a href="index.html"><img src="images/simbolo.svg"=""> </a>
 				</div>
 				<nav>
 					<ul>
-						<li class="active"><a href="about.html">About</a></li>
-						<li><a href="work.html">Work</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a href="https://www.instagram.com/proxy_go/">Instagram</a></li>
+						
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="work.html">My Work</a></li>
+            <li><a href="products.html">My Products</a></li>
+						<li class="active"><a href="about.html">About Me</a></li>
+            
 					</ul>
 				</nav>
 			</div>
@@ -74,24 +77,386 @@
 		<div class="page-content">
 			<h1 class="mb0">About Me</h1>
 			<div class="meta"><span>Web Designer</span>, <span>Illustradora</span>, <span>Pilota de Drones</span></div>
-			<p>Bacharelada em Design. Ilustradora e Web Design.</p>
-			<p class="text-center"><img src="images/person.png" alt="Free HTML5 by FreeHTML5.co"></p>
-			<p>Proxy Go. Quasi saepe officia, consectetur praesentium minus reiciendis, accusamus consequuntur iusto ad illum quibusdam commodi facere tenetur. Culpa quia laborum quam, sint laboriosam delectus veniam, at molestiae magnam iusto similique dolorem ea doloremque!</p>
-			<p>Ullam recusandae error odit eveniet soluta temporibus quis mollitia dignissimos quasi, magni culpa sed, minima atque quae a vitae dolores, illo cum sint! Quaerat rem incidunt nihil laborum nulla placeat soluta, fugit dolor aperiam facere itaque laboriosam error ratione praesentium.</p>
-			<ul class="square">
-				<li>Laboriosam error ratione praesentium</li>
-				<li>Similique dolorem</li>
-				<li>Iusto ad illum quibusdam</li>
-			</ul>
+			
+			<p>Oi! Eu sou a Proxy Go designer com foco em UX Design e uma quedinha assumida por tudo que envolve narrativa visual. Trabalho criando experiências digitais com base em pesquisa, clareza e intenção: do entendimento do problema até a entrega de telas consistentes, acessíveis e prontas pra virar produto. Além de UX, também atuo com Brand Identity (logo, identidade visual, naming e direção criativa) e com ilustração/criação de personagens, porque eu acredito muito em projetos que têm alma e isso aparece tanto na interface quanto na marca. Se você procura alguém que una pensamento analítico + olhar estético + organização de processo, bora conversar.</p>
+			<p>Hi! I’m Proxy Go a designer focused on UX Design, with a soft spot for everything related to visual storytelling. I create digital experiences grounded in research, clarity, and intention: from understanding the problem to delivering consistent, accessible screens that are ready to ship.
+      Beyond UX, I also work with Brand Identity (logos, visual identity systems, naming, and creative direction) as well as illustration and character design, because I truly believe the best projects have soul and that shows up both in the interface and in the brand.
+      If you’re looking for someone who blends analytical thinking, a strong visual eye, and a well-structured process, let’s talk.</p>
+
+		</div>
+
+	<!--area do certificado -->
+
+<title>Certificações – Proxy Go</title>
+<style>
+  /* ===== PALETA PROFISSIONAL ===== */
+  :root{
+    --primary:#fa68ce;      /* navy: busca, chips ativos, botões */
+    --primary-700:#0B1A2C;  /* hover do botão/navy mais escuro */
+    --accent:#fa68ce;       /* laranja do pill “Currículo vivo” */
+    --text:#0F172A;         /* títulos/texto principal */
+    --muted:#667085;        /* parágrafos/metadados */
+    --bg:#F8FAFC;           /* fundo geral */
+    --card:#FFFFFF;         /* fundo dos cards */
+    --chip-bg:#E9EEF5;      /* chip inativo / botões neutros */
+    --chip-text:#0F233C;    /* texto do chip inativo */
+    --radius:18px;
+  }
+
+  /* ===== BASE ===== */
+  html,body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:1120px;margin:auto;padding:32px 20px 80px;}
+  .title{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .pill{
+    background:var(--accent);color:#fff;
+    padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.4px;
+  }
+  h1{font-size:clamp(28px,3.2vw,40px);margin:6px 0 8px}
+  p.lead{margin:0 0 18px;color:var(--muted)}
+
+  /* ===== CONTROLES ===== */
+
+	/* Controls */
+	.controls{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0 22px}
+	@media(min-width:720px){.controls{grid-template-columns:320px 1fr auto}}
+	.search{display:flex;align-items:center;background:#ffe0f6;border:1px solid #ffd4ec;border-radius:var(--radius);padding:10px 12px;gap:10px}
+
+	.filters{display:flex;flex-wrap:wrap;gap:8px}
+	
+	
+  .search input{
+    flex:1;background:transparent;border:0;outline:0;color:#1a1a1a;font-size:15px;
+  }
+
+  .chip{
+    border:0;background:var(--chip-bg);color:var(--chip-text);
+    border-radius:999px;padding:8px 12px;font-size:13px;cursor:pointer;
+    transition:background .15s ease,color .15s ease;
+  }
+  .chip[data-active="true"], .chip:hover{
+    background:var(--primary);color:#fff;
+  }
+
+  .cta{
+    appearance:none;border:0;background:var(--chip-bg);color:var(--text);
+    font-weight:700;border-radius:12px;padding:10px 14px;cursor:pointer;
+  }
+
+  /* ===== GRID ===== */
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+  /* ===== CARD ===== */
+  .card{
+    background:var(--card);border:1px solid #edf0f4;border-radius:var(--radius);
+    padding:16px;display:flex;flex-direction:column;gap:12px;
+    box-shadow:0 1px 2px rgba(15,23,42,.04);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(15,23,42,.08);
+  }
+  .badge{
+    display:inline-flex;gap:6px;align-items:center;font-size:12px;
+    background:#EEF2F7;border:0;border-radius:999px;padding:4px 10px;color:var(--text);
+  }
+  .course{font-weight:800;line-height:1.25;color:var(--text)}
+  .meta{color:var(--muted);font-size:13px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{
+    font-size:11px;background:#F1F4F8;border:0;border-radius:999px;
+    padding:4px 8px;color:var(--text);
+  }
+  .actions{display:flex;gap:8px;margin-top:auto}
+
+  /* botões navy */
+  .btn{
+    flex:1;text-align:center;text-decoration:none;color:#fff;
+    background:var(--primary);font-weight:700;border-radius:10px;padding:9px 10px;
+    transition:background .15s ease;
+  }
+  .btn:hover{background:var(--primary-700)}
+  .btn.secondary{background:var(--chip-bg);color:var(--text)}
+
+  /* ===== MODAL dlg===== */
+  dialog{
+    border:1px solid #e5e8ee;border-radius:16px;max-width:760px;width:96%;
+    background:#fff;color:var(--text);
+  }
+  dialog::backdrop{background:rgba(0,0,0,.45)}
+  .dlg{padding:10px 14px 18px}
+  .dlg header{display:flex;justify-content:space-between;align-items:start;gap:16px}
+  .dlg h3{margin:10px 0 4px}
+  .close{appearance:none;background:transparent;border:0;color:var(--text);font-size:22px;cursor:pointer}
+
+  /* ===== FOOTER ===== */
+  footer{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+  .download{
+    background:var(--chip-bg);color:var(--text);
+    border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:800;
+  }
+  .note{font-size:13px;color:var(--muted)}
+</style>
+
+
+  <main class="wrap">
+    <div class="title">
+      <span class="pill">Currículo vivo</span>
+      <h1>Certificações & Cursos</h1>
+    </div>
+    <!--<p class="lead">Seleção de cursos que fortalecem meu foco em <b>UX</b>, <b>UI</b>, <b>Gamificação</b> e <b>Design orientado a produto</b>. Busco formação contínua, mão na massa e aplicada aos meus projetos.</p>-->
+
+    <!-- CONTROLES: busca + filtros de categoria -->
+    <section class="controls" aria-label="Controles de filtragem">
+      <label class="search" aria-label="Pesquisar certificados">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#bdbdbd" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input id="q" type="search" placeholder="Buscar por curso, tema, instituição…" />
+      </label>
+      <div class="filters" role="group" aria-label="Filtrar por categoria">
+        <button class="chip" data-filter="all" data-active="true">Tudo</button>
+        <button class="chip" data-filter="ux">UX Research</button>
+        <button class="chip" data-filter="ui">UI Design</button>
+        <button class="chip" data-filter="tools">Ferramentas</button>
+        <button class="chip" data-filter="strategy">Estratégia & IA</button>
+        <button class="chip" data-filter="frontend">Front‑end</button>
+        <button class="chip" data-filter="illustration">Ilustração</button>
+		<button class="chip" data-filter="graduacao">Graduação</button>
+      </div>
+      <button class="cta" id="clear">Limpar filtros</button>
+    </section>
+
+    <!-- GRID DE CERTIFICADOS -->
+    <section class="grid" id="grid" aria-live="polite">
+
+	  <!-- Graduação -->
+    <article class="card" data-cat="graduacao" data-title="UX Research: Metodologias e Imersão em Pesquisa Alura 2024">
+        <span class="badge">R2 Formação Pedagógica • 2025</span>
+        <div class="course">Licenciatura em Historia</div>
+        <div class="meta">Carga: 1120h · Conclusão: 05/08/2025</div>
+        <div class="tags"><span class="tag">Graduação</span><span class="tag">Licenciatura</span><span class="tag">História</span></div>
+        <div class="actions">
+          <button class="btn secondary" data-details='{"t":"Licenciatura em Historia","inst":"Alura","ano":"2025","topicos":["Pesquisa em UX","Plano de pesquisa","Imersão ao tema","Descobertas e resultados"]}'>Detalhes</button>
+        </div>
+    </article>
+
+
+	  <article class="card" data-cat="graduacao" data-title="UX Research: Metodologias e Imersão em Pesquisa Alura 2024">
+        <span class="badge">R2 Formação Pedagógica • 2024</span>
+        <div class="course">Licenciatura em Artes Visuais</div>
+        <div class="meta">Carga: 1120h · Conclusão: 05/07/2024</div>
+        <div class="tags"><span class="tag">Graduação</span><span class="tag">Licenciatura</span><span class="tag">Artes Visuais</span></div>
+        <div class="actions">
+          <button class="btn secondary" data-details='{"t":"Licenciatura em Artes Visuais","inst":"Alura","ano":"2024","topicos":["Pesquisa em UX","Plano de pesquisa","Imersão ao tema","Descobertas e resultados"]}'>Detalhes</button>
+        </div>
+    </article>
+
+    <article class="card" data-cat="graduacao" data-title="Bacharelado em Design – Universidade São Judas Tadeu">
+              <span class="badge">USJT • 2023</span>
+              <div class="course">Bacharelado em Design – Universidade São Judas Tadeu</div>
+              <div class="meta">Carga: 2533h · Conclusão: 21/07/2023</div>
+              <div class="tags"><span class="tag">Graduação</span><span class="tag">Bacharelado</span><span class="tag">Design</span></div>
+              <div class="actions">
+                <button class="btn secondary" data-details='{"t":"Bacharelado em Design – Universidade São Judas Tadeu","inst":"USJT","ano":"2023","topicos":["Pesquisa em UX","Plano de pesquisa","Imersão ao tema","Descobertas e resultados"]}'>Detalhes</button>
+              </div>
+    </article>
+
+      <!-- UX / Pesquisa -->
+      <article class="card" data-cat="ux" data-title="UX Research: Metodologias e Imersão em Pesquisa Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">UX Research: Metodologias e Imersão em Pesquisa</div>
+        <div class="meta">Carga: 10h · Conclusão: 05/11/2024</div>
+        <div class="tags"><span class="tag">Planejamento</span><span class="tag">Descobertas</span><span class="tag">Resultados</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"UX Research: metodologias e imersão em pesquisa","inst":"Alura","ano":"2024","topicos":["Pesquisa em UX","Plano de pesquisa","Imersão ao tema","Descobertas e resultados"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <article class="card" data-cat="ux" data-title="UX Research Avaliando Interfaces com Heurísticas Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">UX Research: Avaliando Interfaces com Heurísticas</div>
+        <div class="meta">Carga: 8h · Conclusão: 30/08/2024</div>
+        <div class="tags"><span class="tag">Heurísticas</span><span class="tag">Avaliação</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"Avaliando interfaces com heurísticas","inst":"Alura","ano":"2024","topicos":["Violação de heurísticas","Gravidade","Recomendações"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <article class="card" data-cat="ux" data-title="UX Research Mapeando a Experiência da Pessoa Usuária Alura 2025">
+        <span class="badge">Alura • 2025</span>
+        <div class="course">UX Research: Mapeando a Experiência da Pessoa Usuária</div>
+        <div class="meta">Carga: 10h · Conclusão: 13/01/2025</div>
+        <div class="tags"><span class="tag">Mapeamento</span><span class="tag">Persona</span><span class="tag">Jornada</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"Mapeando a experiência da pessoa usuária","inst":"Alura","ano":"2025","topicos":["Mapeando experiências","Persona","Jornada do usuário","Fluxo de uso"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <!-- UI -->
+      <article class="card" data-cat="ui" data-title="UI Design Teste de Usabilidade Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">UI Design: Teste de Usabilidade</div>
+        <div class="meta">Carga: 6h · Conclusão: 25/11/2024</div>
+        <div class="tags"><span class="tag">Planejamento</span><span class="tag">Execução</span><span class="tag">Análise</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"UI Design: Teste de Usabilidade","inst":"Alura","ano":"2024","topicos":["Conceitos do teste","Preparos","Execução","Análise"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <!-- Ferramentas -->
+      <article class="card" data-cat="tools" data-title="Figma Conhecendo a Ferramenta Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">Figma: Conhecendo a Ferramenta</div>
+        <div class="meta">Carga: 10h · Conclusão: 10/04/2024</div>
+        <div class="tags"><span class="tag">Componentes</span><span class="tag">Variáveis</span><span class="tag">Estilos</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"Figma: Conhecendo a Ferramenta","inst":"Alura","ano":"2024","topicos":["Organização de arquivos","Componentes","Variáveis e estilos"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <!-- Estratégia & IA -->
+      <article class="card" data-cat="strategy" data-title="Design Thinking Viabilizando Soluções Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">Design Thinking: Viabilizando Soluções</div>
+        <div class="meta">Carga: 8h · Conclusão: 28/10/2024</div>
+        <div class="tags"><span class="tag">Ideação</span><span class="tag">Protótipos</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"Design Thinking: Viabilizando Soluções","inst":"Alura","ano":"2024","topicos":["Problema","Ideação","Prototipação"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <article class="card" data-cat="strategy" data-title="Design e Inteligência Artificial Otimizando o Processo Criativo Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">Design e Inteligência Artificial: Otimizando o Processo Criativo</div>
+        <div class="meta">Carga: 8h · Conclusão: 06/08/2024</div>
+        <div class="tags"><span class="tag">IA aplicada</span><span class="tag">Workflow</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"Design e IA: Otimizando o Processo Criativo","inst":"Alura","ano":"2024","topicos":["Ferramentas de IA","Geração de ideias","Boas práticas"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <!-- Front-end -->
+      <article class="card" data-cat="frontend" data-title="HTML e CSS Ambientes de desenvolvimento estrutura de arquivos e tags Alura 2024">
+        <span class="badge">Alura • 2024</span>
+        <div class="course">HTML e CSS: Ambientes, Estrutura de Arquivos e Tags</div>
+        <div class="meta">Carga: 8h · Conclusão: 21/03/2024</div>
+        <div class="tags"><span class="tag">Semântica</span><span class="tag">CSS</span><span class="tag">VS Code</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"HTML e CSS: Ambientes, Estrutura e Tags","inst":"Alura","ano":"2024","topicos":["VS Code","Semântica","CSS base"]}'>Detalhes</button>
+        </div>
+      </article>
+
+	   <article class="card" data-cat="frontend" data-title="Eu programo - Front-end">
+        <span class="badge">Programaria • 2021</span>
+        <div class="course">Eu programo - Front-end</div>
+        <div class="meta">Carga: 40h · Conclusão: 20/03/2021</div>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">VS Code</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"Eu programo - Front-end","inst":"Alura","ano":"2021","topicos":["VS Code","Semântica","CSS base"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <article class="card" data-cat="graduacao" data-title="HTML e CSS">
+        <span class="badge">USJT • 2025</span>
+        <div class="course">Sistemas para Internet</div>
+        <div class="meta">Carga: 2500h · Conclusão: 31/12/2025</div>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Graduação</span></div>
+        <div class="actions">
+
+          <button class="btn secondary" data-details='{"t":"HTML e CSS: Ambientes, Estrutura e Tags","inst":"Alura","ano":"2024","topicos":["VS Code","Semântica","CSS base"]}'>Detalhes</button>
+        </div>
+      </article>
+
+      <!-- Ilustração -->
+      <article class="card" data-cat="illustration" data-title="Domestika Portfólio online para ilustradores de livros infantis 2023">
+        <span class="badge">Domestika • 2023</span>
+        <div class="course">Portfólio online para ilustradores de livros infantis</div>
+        <div class="meta">Instrutora: Marissa Valdez</div>
+        <div class="tags"><span class="tag">Ilustração</span><span class="tag">Mercado Editorial</span></div>
+        <div class="actions">
+  
+          <button class="btn secondary" data-details='{"t":"Portfólio para ilustradores de livros infantis","inst":"Domestika","ano":"2023","topicos":["Curadoria de projetos","Apresentação de portfólio","Mercado de ilustração"]}'>Detalhes</button>
+        </div>
+      </article>
+
+       <article class="card" data-cat="illustration" data-title="Design de mundos kawaii: crie ilustrações alegres">
+        <span class="badge">Domestika • 2025</span>
+        <div class="course">Design de mundos kawaii: crie ilustrações alegres</div>
+        <div class="meta">Instrutora: Becky Cas</div>
+        <div class="tags"><span class="tag">Ilustração</span><span class="tag">Mercado Editorial</span></div>
+        <div class="actions">
+  
+          <button class="btn secondary" data-details='{"t":"Portfólio para ilustradores de livros infantis","inst":"Domestika","ano":"2025","topicos":["Curadoria de projetos","Apresentação de portfólio","Mercado de ilustração"]}'>Detalhes</button>
+        </div>
+      </article>
+
+        <article class="card" data-cat="illustration" data-title="Ilustração infantil com Procreate: crie cenas mágicas">
+        <span class="badge">Domestika • 2025</span>
+        <div class="course">Ilustração infantil com Procreate: crie cenas mágicas</div>
+        <div class="meta">Instrutora: Lucy Fleming</div>
+        <div class="tags"><span class="tag">Ilustração</span><span class="tag">Mercado Editorial</span></div>
+        <div class="actions">
+  
+          <button class="btn secondary" data-details='{"t":"Portfólio para ilustradores de livros infantis","inst":"Domestika","ano":"2025","topicos":["Curadoria de projetos","Apresentação de portfólio","Mercado de ilustração"]}'>Detalhes</button>
+        </div>
+      </article>
+
+    </section>
+
+</main>
+
+<!-- MODAL Detalhes -->
+<dialog id="dlg" aria-labelledby="m-title" aria-describedby="m-topics">
+  <div class="dlg">
+    <header>
+      <div>
+        <div class="badge" id="m-inst">Instituição</div>
+        <h3 id="m-title">Título do curso</h3>
+        <div class="meta" id="m-ano">Ano</div>
+      </div>
+      <button class="close" aria-label="Fechar" onclick="document.getElementById('dlg').close()">×</button>
+    </header>
+    <div class="body">
+      <strong>Conteúdo abordado</strong>
+      <ul id="m-topics"></ul>
+      <a id="m-open" class="" href="#" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
+</dialog>
+
+		<!-- END #fh5co-header -->
+
+		<div class="page-content">
+			<h1>Contact Me</h1>
+			<p>Você pode entrar em contato comigo pelo endereço de e-mail: <a href="mailto:iaproxy@outlook.com">iaproxy@outlook.com</a>.</p>
+			<p class="text-center"><img src="images/PG-N-F.png" alt="Free HTML5 by FreeHTML5.co"></p>
+			<p>xo xo ♥</p>
+			<p> </p>
+			
 		</div>
 
 		
-		<!-- END .container-fluid -->
+<!-- END .container-fluid -->
 
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="container-fluid">
 				<div class="footer-content">
-					<div class="copyright"><small>&copy; 2023 Present. All Rights Reserved. <br>Images: <a href="https://github.com/proxygo">Proxy Go</a></small></div>
+					<div class="copyright"><small>&copy; 2026 Present. All Rights Reserved. <br>Images: <a href="https://github.com/proxygo">Proxy Go</a></small></div>
 					<div class="social">
 						<a href="https://github.com/proxygo"><i class="icon-github"></i></a>
 						<a href="https://www.instagram.com/proxy_go/"><i class="icon-instagram2"></i></a>
@@ -100,16 +465,103 @@
 				</div>
 			</div>
 		</footer>
-		<!-- END #fh5co-footer -->
+<!-- END #fh5co-footer -->
+
 		
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- masonry -->
-	<script src="js/jquery.masonry.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+		<script src="js/jquery.min.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Masonry -->
+		<script src="js/jquery.masonry.min.js"></script>
+
+		<!-- Owl Carousel -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+		<!-- Script do card -->
+		<script src="js/card.js"></script>
+
+		<!-- MAIN JS -->
+		<script src="js/main.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // ===== Busca =====
+  const q = document.getElementById('q');
+  const grid = document.getElementById('grid');
+  const cards = [...grid.querySelectorAll('.card')];
+
+  q?.addEventListener('input', () => {
+    const term = q.value.trim().toLowerCase();
+    cards.forEach(c => {
+      const hay = (c.dataset.title + ' ' + (c.dataset.tags||'')).toLowerCase();
+      c.style.display = hay.includes(term) ? '' : 'none';
+    });
+  });
+
+  // ===== Filtros =====
+  const chips = [...document.querySelectorAll('.chip')];
+  const setActive = (key) => chips.forEach(ch => ch.dataset.active = (ch.dataset.filter===key));
+  chips.forEach(ch => ch.addEventListener('click', () => {
+    const k = ch.dataset.filter;
+    setActive(k);
+    cards.forEach(c => { c.style.display = (k==='all' || c.dataset.cat===k) ? '' : 'none'; });
+    if (q) q.value='';
+  }));
+  document.getElementById('clear')?.addEventListener('click', () => {
+    setActive('all'); if (q) q.value=''; cards.forEach(c=>c.style.display='');
+  });
+
+  // ===== Modal (compatível com teu dialog) =====
+  const dlg = document.getElementById('dlg');
+  document.body.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-details]');
+    if (!btn) {
+      if (e.target === dlg || e.target.closest('.close')) dlg.close();
+      return;
+    }
+
+    let data = {};
+    try { data = JSON.parse(btn.getAttribute('data-details') || '{}'); }
+    catch(err){ alert('JSON inválido em data-details'); return; }
+
+    // mapeia pro teu modal
+    const elInst  = document.getElementById('m-inst');
+    const elTitle = document.getElementById('m-title');
+    const elAno   = document.getElementById('m-ano');
+    const list    = document.getElementById('m-topics');
+    const aOpen   = document.getElementById('m-open');
+
+    elTitle.textContent = data.t || data.title || '';
+    elInst.textContent  = data.inst || elInst.textContent || '—';
+    elAno.textContent   = data.ano || data.year || '—';
+
+    list.innerHTML = '';
+    if (Array.isArray(data.topicos) && data.topicos.length) {
+      data.topicos.forEach(t => { const li=document.createElement('li'); li.textContent=t; list.appendChild(li); });
+    } else {
+      (data.tecnicas || []).forEach(t => { const li=document.createElement('li'); li.textContent=t; list.appendChild(li); });
+      if (data.desc) { const li=document.createElement('li'); li.textContent=data.desc; list.appendChild(li); }
+    }
+
+    const openSibling = btn.parentElement.querySelector('[data-open]');
+    aOpen.href = data.img || data.download || openSibling?.dataset?.url || '#';
+
+    if (typeof dlg.showModal === 'function') dlg.showModal();
+    else { dlg.setAttribute('open',''); dlg.style.display='block'; dlg.style.position='fixed'; dlg.style.inset='50% auto auto 50%'; dlg.style.transform='translate(-50%,-50%)'; document.body.style.overflow='hidden'; }
+  });
+
+  dlg.addEventListener('close', () => {
+    dlg.style.display=''; dlg.style.position=''; dlg.style.inset=''; dlg.style.transform=''; document.body.style.overflow='';
+  });
+
+  console.log('ready: showModal =', typeof dlg.showModal === 'function');
+});
+</script>
+
 
 	</body>
 </html>

@@ -1,0 +1,186 @@
+
+/* card do cabeçalho */
+
+@charset "utf-8";
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+/* Escopo: tudo dentro da seção .tg-scope */
+.tg-scope * {
+  margin: 0;
+  padding: 0;
+}
+.tg-scope {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.tg-scope .clear { clear: both; }
+.tg-scope img { max-width: 100%; border: 0; }
+.tg-scope ul,
+.tg-scope ol { list-style: none; }
+.tg-scope a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.tg-scope a:focus,
+.tg-scope a:active,
+.tg-scope a:visited,
+.tg-scope a:hover {
+  text-decoration: none;
+  outline: none;
+}
+.tg-scope a:hover { color: #d818ae; }
+
+.tg-scope h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+.tg-scope h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 36px;
+}
+.tg-scope button { outline: none !important; }
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.tg-scope .line-title { position: relative; width: 400px; }
+.tg-scope .line-title::before,
+.tg-scope .line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.tg-scope .line-title::before { width: 100%; background: #f2f2f2; }
+.tg-scope .line-title::after { width: 32px; background: hsl(330, 78%, 65%); }
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.tg-scope { padding: 60px 50px; } /* substitui .game-section */
+.tg-scope .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.tg-scope .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.tg-scope .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.tg-scope .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 221, 221, 0), rgb(252, 44, 207));
+}
+.tg-scope .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.tg-scope .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.tg-scope .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.tg-scope .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.tg-scope .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tg-scope h2 { margin-bottom: 32px; }
+  .tg-scope h3 { margin: 0 0 8px; font-size: 24px; line-height: 32px; }
+
+  .tg-scope { padding: 50px 30px; }
+  .tg-scope .item { margin: 0 12px 60px; width: 260px; height: 360px; }
+  .tg-scope .item.active { width: 400px; }
+  .tg-scope .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tg-scope h2 { margin-bottom: 32px; }
+  .tg-scope h3 { margin: 0 0 8px; font-size: 24px; line-height: 32px; }
+  .tg-scope .line-title { width: 330px; }
+
+  .tg-scope { padding: 50px 30px 40px; }
+  .tg-scope .item { margin: 0 12px 60px; width: 240px; height: 330px; }
+  .tg-scope .item.active { width: 360px; }
+  .tg-scope .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  .tg-scope { font-size: 14px; }
+  .tg-scope h2 { margin-bottom: 20px; }
+  .tg-scope h3 { margin: 0 0 18px; font-size: 12px; line-height: 24px; }
+  .tg-scope .line-title { width: 250px; }
+
+  .tg-scope { padding: 30px 15px 20px; }
+  .tg-scope .item { margin: 0 10px 40px; width: 200px; height: 280px; }
+  .tg-scope .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .tg-scope .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
